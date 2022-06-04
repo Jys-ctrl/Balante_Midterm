@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/game_id"
+        android:layout_width="204dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="36dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/game_title"
+        android:layout_width="204dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="36dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/game_date"
+        android:layout_width="204dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="256dp"
+        android:layout_marginEnd="36dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/game_developer"
+        android:layout_width="204dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="312dp"
+        android:layout_marginEnd="36dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/game_publisher"
+        android:layout_width="204dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="436dp"
+        android:layout_marginEnd="36dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/game_genre"
+        android:layout_width="204dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="372dp"
+        android:layout_marginEnd="36dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/edit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="132dp"
+        android:text="Edit"
+        android:background="@color/wheat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="132dp"
+        android:text="Delete"
+        android:background="@color/wheat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="132dp"
+        android:background="@color/wheat"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/delete_button"
+        app:layout_constraintStart_toEndOf="@+id/edit_button" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName5"
+        android:layout_width="103dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:textSize="15dp"
+        android:inputType="textPersonName"
+        android:text="Game ID:"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="129dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName9"
+        android:layout_width="148dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Game Publisher"
+        tools:layout_editor_absoluteX="16dp"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteY="428dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName7"
+        android:layout_width="104dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Game Date"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="250dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName8"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Game Developer"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="310dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName10"
+        android:layout_width="132dp"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Game Genre"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="372dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName6"
+        android:layout_width="116dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:textSize="15dp"
+        android:inputType="textPersonName"
+        android:text="Game Title"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="186dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

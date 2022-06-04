@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "422174284528",
+    "firebase_url": "https://eldroid-65f11-default-rtdb.firebaseio.com",
+    "project_id": "eldroid-65f11",
+    "storage_bucket": "eldroid-65f11.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:422174284528:android:e87a1c34cd14e52b838035",
+        "android_client_info": {
+          "package_name": "com.example.balante_midterm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "422174284528-9kmjeqs3j58060icjrmeerkt9pij31c7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7fYHNHNWD4BNxRECK41YZv4O9tnemMEY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "422174284528-9kmjeqs3j58060icjrmeerkt9pij31c7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
