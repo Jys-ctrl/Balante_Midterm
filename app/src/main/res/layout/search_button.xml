@@ -1,167 +1,176 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/dimgray"
+tools:context=".Add">
+
+<RelativeLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_gravity="center"
+    android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/game_id"
-        android:layout_width="204dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="132dp"
-        android:layout_marginEnd="36dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
 
-    <TextView
-        android:id="@+id/game_title"
-        android:layout_width="204dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="192dp"
-        android:layout_marginEnd="36dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/game_date"
-        android:layout_width="204dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="256dp"
-        android:layout_marginEnd="36dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/game_titleLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Enter Game Title"
+            android:padding="5dp"
+            android:textColorHint="@color/Black"
+            app:boxStrokeColor="@color/purple_200"
+            app:hintTextColor="@color/Black">
 
-    <TextView
-        android:id="@+id/game_developer"
-        android:layout_width="204dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="312dp"
-        android:layout_marginEnd="36dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/game_titleEdit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/wheat"
+                android:ems="10"
+                android:importantForAutofill="no"
+                android:inputType="phone"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="14sp"
+                app:boxStrokeColor="@color/purple_200" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-    <TextView
-        android:id="@+id/game_publisher"
-        android:layout_width="204dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="436dp"
-        android:layout_marginEnd="36dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/game_dateLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Enter Game Date Created"
+            android:padding="5dp"
+            android:textColorHint="@color/Black"
+            app:hintTextColor="@color/Black">
 
-    <TextView
-        android:id="@+id/game_genre"
-        android:layout_width="204dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="372dp"
-        android:layout_marginEnd="36dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/game_dateEdit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/wheat"
+                android:ems="10"
+                android:importantForAutofill="no"
+                android:inputType="textImeMultiLine|textMultiLine"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/edit_button"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/game_developerLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Enter Game Developer"
+            android:padding="5dp"
+            android:textColorHint="@color/Black"
+            app:hintTextColor="@color/Black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/game_developerEdit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/wheat"
+                android:ems="10"
+                android:importantForAutofill="no"
+                android:inputType="textImeMultiLine|textMultiLine"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/game_publisherLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Enter Game Publisher"
+            android:padding="5dp"
+            android:textColorHint="@color/Black"
+            app:hintTextColor="@color/Black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/game_publisherEdit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/wheat"
+                android:ems="10"
+                android:importantForAutofill="no"
+                android:inputType="textImeMultiLine|textMultiLine"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/game_genreLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Enter Game Genre"
+            android:padding="5dp"
+            android:textColorHint="@color/Black"
+            app:hintTextColor="@color/Black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/game_genreEdit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/wheat"
+                android:ems="10"
+                android:importantForAutofill="no"
+                android:inputType="textImeMultiLine|textMultiLine"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--button for adding a new course-->
+        <Button
+            android:id="@+id/addbutton"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/wheat"
+            android:text="Save"
+            android:textAllCaps="true"
+            android:textColor="@color/Black" />
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/idPBLoading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginBottom="132dp"
-        android:text="Edit"
-        android:background="@color/wheat"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:visibility="gone" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/delete_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="44dp"
-        android:layout_marginBottom="132dp"
-        android:text="Delete"
-        android:background="@color/wheat"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/save_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="132dp"
-        android:background="@color/wheat"
-        android:text="Save"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/delete_button"
-        app:layout_constraintStart_toEndOf="@+id/edit_button" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName5"
-        android:layout_width="103dp"
-        android:layout_height="40dp"
-        android:ems="10"
-        android:textSize="15dp"
-        android:inputType="textPersonName"
-        android:text="Game ID:"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="129dp" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName9"
-        android:layout_width="148dp"
-        android:layout_height="44dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Game Publisher"
-        tools:layout_editor_absoluteX="16dp"
-        android:textSize="15dp"
-        tools:layout_editor_absoluteY="428dp" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName7"
-        android:layout_width="104dp"
-        android:layout_height="41dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Game Date"
-        android:textSize="15dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="250dp" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName8"
-        android:layout_width="140dp"
-        android:layout_height="42dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Game Developer"
-        android:textSize="15dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="310dp" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName10"
-        android:layout_width="132dp"
-        android:layout_height="38dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Game Genre"
-        android:textSize="15dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="372dp" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName6"
-        android:layout_width="116dp"
-        android:layout_height="43dp"
-        android:ems="10"
-        android:textSize="15dp"
-        android:inputType="textPersonName"
-        android:text="Game Title"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="186dp" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
+</ScrollView>

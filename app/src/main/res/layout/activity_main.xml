@@ -1,60 +1,148 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/whitesmoke"
+tools:context=".Add">
+
+<RelativeLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/floralwhite"
-    tools:context=".MainActivity">
+    android:layout_gravity="center"
+    android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/textView2"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="500dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="Classic Games"
+            android:textSize="60sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/game_id_searchLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Enter Game ID"
+            android:padding="5dp"
+            android:textColorHint="@color/Black"
+            app:boxStrokeColor="@color/purple_200"
+            app:hintTextColor="@color/Black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/game_id_searchEdit"
+                android:layout_width="287dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/wheat"
+                android:ems="10"
+                android:fontFamily="@font/nexalight"
+                android:importantForAutofill="no"
+                android:inputType="phone"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="14sp"
+                app:boxStrokeColor="@color/purple_200" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="143dp"
+            android:layout_height="37dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/wheat"
+            android:fontFamily="@font/nexabold"
+            android:text="Search"
+            android:textAllCaps="true"
+            android:textColor="@color/Black" />
+
+        <Button
+            android:id="@+id/create_button"
+            android:layout_width="143dp"
+            android:layout_height="37dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/wheat"
+            android:fontFamily="@font/nexabold"
+            android:text="Create"
+            android:textAllCaps="true"
+            android:textColor="@color/Black" />
+
+        <Button
+            android:id="@+id/delete_button"
+            android:layout_width="143dp"
+            android:layout_height="37dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/wheat"
+            android:fontFamily="@font/nexabold"
+            android:text="Delete"
+            android:textAllCaps="true"
+            android:textColor="@color/Black" />
+
+        <Button
+            android:id="@+id/update_button"
+            android:layout_width="143dp"
+            android:layout_height="37dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/wheat"
+            android:fontFamily="@font/nexabold"
+            android:text="Update"
+            android:textAllCaps="true"
+            android:textColor="@color/Black" />
+
+        <Button
+            android:id="@+id/logout_button"
+            android:layout_width="143dp"
+            android:layout_height="37dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/wheat"
+            android:fontFamily="@font/nexabold"
+            android:text="Logout"
+            android:textAllCaps="true"
+            android:textColor="@color/Black" />
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/idPBLoading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="216dp"
-        android:fontFamily="cursive"
-        android:text="Classic Games"
-        android:textSize="50dp"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:visibility="gone" />
 
-    <TextView
-        android:id="@+id/game_id_search"
-        android:layout_width="250dp"
-        android:layout_height="57dp"
-        android:text="Game ID: "
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/search_button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.516" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/search_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="232dp"
-        android:background="@color/wheat"
-        android:text="Search"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.247"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/create_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="232dp"
-        android:background="@color/wheat"
-        android:text="Create"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.727"
-        app:layout_constraintStart_toStartOf="parent" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
+</ScrollView>
