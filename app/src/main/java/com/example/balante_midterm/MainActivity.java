@@ -16,7 +16,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class MainActivity extends AppCompatActivity {
 
     EditText title, date, developer, publisher, genre;
-    Button create, search, update, delete, viewall;
+    Button create, viewall;
     DBHelper DB;
     Button btnLogOut;
     FirebaseAuth mAuth;
@@ -32,9 +32,6 @@ public class MainActivity extends AppCompatActivity {
         developer = findViewById(R.id.game_developerEdit);
         publisher = findViewById(R.id.game_publisherEdit);
         genre = findViewById(R.id.game_genreEdit);
-        search = findViewById(R.id.search_button);
-        update = findViewById(R.id.update_button);
-        delete = findViewById(R.id.delete_button);
 
         create = findViewById(R.id.create_button);
         viewall = findViewById(R.id.viewall_button);
