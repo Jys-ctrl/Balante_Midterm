@@ -5,6 +5,11 @@
       <map>
         <entry key="..\:/FERNANDEZ-Android/Balante_Midterm/app/src/main/res/layout/activity_main.xml" value="0.34479166666666666" />
         <entry key="..\:/FERNANDEZ-Android/Balante_Midterm/app/src/main/res/layout/search_button.xml" value="0.35885416666666664" />
+        <entry key="..\:/Users/Levin Skye/Documents/EmersonsFriend/app/src/main/res/layout/activity_add.xml" value="0.22" />
+        <entry key="..\:/Users/Levin Skye/Documents/EmersonsFriend/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/Users/Levin Skye/Documents/EmersonsFriend/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/Levin Skye/Documents/EmersonsFriend/app/src/main/res/layout/activity_update.xml" value="0.2" />
+        <entry key="..\:/Users/Levin Skye/Documents/EmersonsFriend/app/src/main/res/layout/gameslistitem.xml" value="0.33" />
         <entry key="..\:/Users/joyce/StudioProjects/Balante_Midterm/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.309375" />
         <entry key="..\:/Users/joyce/StudioProjects/Balante_Midterm/app/src/main/res/layout-w936dp/activity_login.xml" value="0.275" />
         <entry key="..\:/Users/joyce/StudioProjects/Balante_Midterm/app/src/main/res/layout/activity_add.xml" value="0.36666666666666664" />
@@ -28,7 +33,6 @@
       </map>
     </option>
   </component>
-  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

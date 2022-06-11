@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Parcelable;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,6 +16,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
+import com.bumptech.glide.Glide;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -56,7 +58,7 @@ public class GamesListAdapter extends BaseAdapter {
         SimpleDateFormat dateFormat = new SimpleDateFormat(myFormat, Locale.US);
         view = LayoutInflater.from(context).inflate(R.layout.gameslistitem, null);
         TextView gameTitle_TV, gameDate_TV, gameDeveloper_TV, gamePublisher_TV, gameGenre_TV;
-        ImageView editIB, deleteIB;
+        ImageView editIB, deleteIB,image_iv;
         editIB = view.findViewById(R.id.editIB);
         deleteIB = view.findViewById(R.id.deleteIB);
         gameTitle_TV = view.findViewById(R.id.gameTitle_TV);
@@ -64,7 +66,8 @@ public class GamesListAdapter extends BaseAdapter {
         gameDeveloper_TV = view.findViewById(R.id.gameDeveloper_TV);
         gamePublisher_TV = view.findViewById(R.id.gamePublisher_TV);
         gameGenre_TV = view.findViewById(R.id.gameGenre_TV);
-
+        image_iv=view.findViewById(R.id.image_iv);
+        Glide.with(context).load(gameList.get(i).getgImg()).into(image_iv);
         gameTitle_TV.setText("Title: " + gameList.get(i).getgTit());
         gameDate_TV.setText("Date Created: " + dateFormat.format(gameList.get(i).getgDate().toDate()));
         gameDeveloper_TV.setText("Developer: " + gameList.get(i).getgDev());

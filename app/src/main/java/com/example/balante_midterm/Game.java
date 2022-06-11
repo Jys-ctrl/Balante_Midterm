@@ -15,17 +15,27 @@ public class Game implements Serializable, Parcelable {
     String gDev;
     String gGen;
     String gPub;
+    String gImg;
 
-    public Game(String gID, String gTit, Timestamp gDate, String gDev, String gGen, String gPub) {
+    public Game(String gID, String gTit, Timestamp gDate, String gDev, String gGen, String gPub, String gImg) {
         this.gID = gID;
         this.gTit = gTit;
         this.gDate = gDate;
         this.gDev = gDev;
         this.gGen = gGen;
         this.gPub = gPub;
+        this.gImg = gImg;
     }
 
     public Game() {
+    }
+
+    public String getgImg() {
+        return gImg;
+    }
+
+    public void setgImg(String gImg) {
+        this.gImg = gImg;
     }
 
     protected Game(Parcel in) {
