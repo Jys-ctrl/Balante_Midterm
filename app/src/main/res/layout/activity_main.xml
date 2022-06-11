@@ -54,7 +54,7 @@ tools:context=".Add">
             android:layout_marginBottom="10dp"
             android:backgroundTint="@color/orange"
             android:fontFamily="@font/nexabold"
-            android:text="View all games added"
+            android:text="View all games"
             android:textAllCaps="true"
             android:textColor="@color/Black" />
 
